@@ -4,13 +4,26 @@
 
 package org.greasenbrine.piba;
 
+import javax.swing.SwingUtilities;
+import org.greasenbrine.piba.swing.PiBaUIEngine;
+
 /**
  *
  * @author nepsauce
  */
-public class PiBa {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    public class PiBa {
+    /**
+     * Runs the program on the EDT (Event Dispatch Thread)
+     * 
+     * @param args Command-line arguments 
+     */
+    @SuppressWarnings({"Convert2Lambda", "unused"})
+    public static void main(String[] args){
+       SwingUtilities.invokeLater(new Runnable() {
+        @Override
+           public void run() {
+               PiBaUIEngine piBaUIEngine = new PiBaUIEngine();
+           }
+       });
     }
 }
