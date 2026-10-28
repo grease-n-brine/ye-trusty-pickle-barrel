@@ -4,6 +4,7 @@
  */
 
 package org.greasenbrine.piba.structures.items;
+import org.greasenbrine.piba.structures.labels.Tag;
 
 
 public class Item implements CoreItem {
@@ -12,6 +13,15 @@ public class Item implements CoreItem {
     private String description;
     private int value;
     private String category;
+    private Tag[] tags;
+
+    public Tag[] getTags() {
+        return tags;
+    }
+
+    public void setTags(Tag[] tags) {
+        this.tags = tags;
+    }
 
     @Override
     public int getID() {
@@ -39,28 +49,28 @@ public class Item implements CoreItem {
     }
 
     @Override
-    public int setID() {
-        return id;
+    public void setID(int id) {
+        this.id = id;
     }
 
     @Override
-    public String setName() {
-        return name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
-    public String setDescription() {
-        return description;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
-    public int setValue() {
-        return value;
+    public void setValue(int value) {
+        this.value = value;
     }
 
     @Override
-    public String setCategory() {
-        return category;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
 }
