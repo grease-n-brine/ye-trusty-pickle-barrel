@@ -6,4 +6,9 @@ public interface CoreItem {
     public String getDescription();
     public int getValue();
     public String getCategory();
+    int setID();
+    String setName();
+    String setDescription();
+    int setValue();
+    String setCategory();
 }
