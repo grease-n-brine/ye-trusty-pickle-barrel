@@ -1,6 +1,5 @@
 package org.greasenbrine.piba.swing;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 import org.greasenbrine.piba.swing.tabbedpanes.MainTabbedPane;
 
@@ -13,8 +12,5 @@ public class PiBaUIEngine extends JFrame {
 
         MainTabbedPane mainTabbedPane = new MainTabbedPane();
         add(mainTabbedPane.getMainTabbedPane());
-
-        JLabel ownershipLabel = new JLabel("Owned by NepSauce, Grease & Brine");
-        add(ownershipLabel);
     }
 }
