@@ -2,7 +2,7 @@ package org.greasenbrine.piba.swing;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import org.greasenbrine.piba.swing.panels.MainTabbedPane;
+import org.greasenbrine.piba.swing.tabbedpanes.MainTabbedPane;
 
 public class PiBaUIEngine extends JFrame {
     public PiBaUIEngine() {

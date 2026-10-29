@@ -1,4 +1,4 @@
-package org.greasenbrine.piba.swing.panels;
+package org.greasenbrine.piba.swing.tabbedpanes;
 import javax.swing.JTabbedPane;
 
 public class MainTabbedPane {
