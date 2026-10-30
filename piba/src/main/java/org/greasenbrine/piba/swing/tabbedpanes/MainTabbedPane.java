@@ -20,8 +20,8 @@ public class MainTabbedPane {
         mainTabbedPane.setTabPlacement(JTabbedPane.TOP);
         mainTabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
 
-        HomePanel homePanel = new HomePanel();
         AnalysisPanel analysisPanel = new AnalysisPanel();
+        HomePanel homePanel = new HomePanel(() -> mainTabbedPane.setSelectedComponent(analysisPanel.getAnalysisPanel()));
         ForecastingPanel forecastingPanel = new ForecastingPanel();
         CloudPanel cloudPanel = new CloudPanel();
         TerminalPanel terminalPanel = new TerminalPanel();
